@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     @viteReactRefresh
-    @vite('resources/react/app.jsx')
+    @vite('resources/react/app.tsx')
 </head>
 <body>
-<div id="app"></div>
+<div id="app" data-projects="{{ json_encode($projects) }}"></div>
 </body>
 </html>
