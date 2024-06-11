@@ -30,16 +30,20 @@ const DataTable = () => {
     <table>
       <thead>
         <tr>
-          <th>Field 1</th>
-          <th>Field 2</th>
+          <th>User Id</th>
+          <th>ID</th>
+          <th>TITLE</th>
+          <th>POST</th>
           {/* Add more headers as needed */}
         </tr>
       </thead>
       <tbody>
         {data.map(item => (
-          <tr key={item.field1}>
-            <td>{item.field1}</td>
-            <td>{item.field2}</td>
+          <tr key={item.id}>
+            <td>{item.userId}</td>
+            <td>{item.id}</td>
+            <td>{item.title}</td>
+            <td>{item.body}</td>
             {/* Add more fields as needed */}
           </tr>
         ))}
